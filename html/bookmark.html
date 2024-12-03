@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="../css/bookmark.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="dashboard-after-login-or-register.html"><h1>CyberToolKit</h1></a>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <div class="search-icon" id="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="search-bar" id="search-bar">
+                    <form action="/searchTool" method="POST">
+                        <input type="text" name="tool_name" placeholder="Enter tools" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="profile-icon-container">
+                <div class="profile-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h2>Hacking Tools</h2>
+            <div class="tools-list">
+                <a href="Wireshark.html">
+                    <div class="tool">
+                        <span class="bookmark">&#9733;</span>
+                        <img class="tool-logo" src="../asset/Wireshark Logo.png" alt="Wireshark Logo">
+                        <p class="tool-name">Wireshark</p>
+                        <p class="tool-description">Wireshark is a network protocol analyzer that captures and inspects data packets in real-time. It's used for network troubleshooting, analysis, and security auditing. Wireshark can help identify network issues, detect malicious activity, and analyze traffic patterns.</p>
+                    </div>
+                </a>
+                <div class="tool">
+                    <span class="bookmark">&#9733;</span>
+                    <img class="tool-logo" src="../asset/Burpsuite Logo.png" alt="Burpsuite Logo">
+                    <p class="tool-name">Burpsuite</p>
+                    <p class="tool-description">Burp Suite is a comprehensive web application security testing platform. It includes various tools for vulnerability scanning, web proxying, and penetration testing. Burp Suite allows security professionals to intercept and modify HTTP requests, automate custom attacks, and identify security flaws in web applications.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/searchicon.js"></script>
+    <script src="../js/profileicon.js"></script>
+</body>
+</html>
